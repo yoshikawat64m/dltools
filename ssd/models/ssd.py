@@ -199,7 +199,7 @@ class SSD300(Model):
         # Prediction from conv7_2
         out_conv7_2_mbox_loc = self.conv7_2_mbox_loc(out_conv7_2)
         out_conv7_2_mbox_loc_flat = self.flatten(out_conv7_2_mbox_loc)
-        out_conv7_2_mbox_conf self.conv7_2_mbox_conf(out_conv7_2)
+        out_conv7_2_mbox_conf = self.conv7_2_mbox_conf(out_conv7_2)
         out_conv7_2_mbox_conf_flat = self.flatten(out_conv7_2_mbox_conf)
         out_conv7_2_mbox_priorbox = self.conv7_2_mbox_priorbox(out_conv7_2)
 
