@@ -29,7 +29,7 @@ class VGG16(Model):
         self.block2_conv_3x3x128 = ConvLayers2D(layers=2, filters=128, kernel_size=3, pool=True, name="block2_conv_3x3x128")
         self.block3_conv_3x3x256 = ConvLayers2D(layers=3, filters=256, kernel_size=3, pool=True, name="block3_conv_3x3x256")
         self.block4_conv_3x3x512 = ConvLayers2D(layers=3, filters=512, kernel_size=3, pool=True, name="block4_conv_3x3x512")
-        self.block5_conv_3x3x512 = ConvLayers2D(layers=3, filters=512, kernel_size=3, pool=True, pool_size=(3, 3), pool_strides=(1, 1), name="block5_conv_3x3x512")
+        self.block5_conv_3x3x512 = ConvLayers2D(layers=3, filters=512, kernel_size=3, pool=True, name="block5_conv_3x3x512")
 
         self.flatten = Flatten(name='flatten')
         self.fc1_4096 = Dense(4096, activation='relu', name='fc1_4096')
